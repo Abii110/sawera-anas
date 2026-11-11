@@ -18,7 +18,8 @@ a{color:#0F3B2E}a:hover{color:#7A1E2C}
 .door{position:absolute;top:0;bottom:0;width:50%;transition:transform 1.5s cubic-bezier(.7,0,.25,1), opacity 1.5s ease;box-sizing:border-box;overflow:hidden}
 .door-l{left:0;transform-origin:left center;border-right:1px solid rgba(201,162,74,.6)}
 .door-r{right:0;transform-origin:right center;border-left:1px solid rgba(201,162,74,.6)}
-.gate.gone{display:none}
+.gate.gone{display:none!important}
+.gate.open{pointer-events:none}
 .gate{transition:background-color 1.2s ease}
 .gate.open .door-l{transform:perspective(1400px) rotateY(100deg);opacity:0}
 .gate.open .door-r{transform:perspective(1400px) rotateY(-100deg);opacity:0}
@@ -99,10 +100,10 @@ a{color:#0F3B2E}a:hover{color:#7A1E2C}
 <span style="height: 1px; width: 90px; background-color: #C9A24A"></span>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; max-width: 440px; margin: 0 auto">
-<p style="margin: 0; padding: 12px 4px; border-top: 1px solid #C9A24A; border-bottom: 1px solid #C9A24A; font-size: 15px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600">Wednesday</p>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); column-gap: 14px; align-items: center; max-width: 440px; margin: 0 auto">
+<p style="margin: 0; padding: 12px 2px; border-top: 1px solid #C9A24A; border-bottom: 1px solid #C9A24A; font-size: clamp(12px, 3.4vw, 15px); letter-spacing: .14em; text-transform: uppercase; font-weight: 600">Wednesday</p>
 <p style="margin: 0; display: flex; flex-direction: column; align-items: center; line-height: 1"><span style="font-size: 64px; font-weight: 500; color: #7A1E2C">16</span><span style="font-size: 14px; letter-spacing: .24em; text-transform: uppercase; font-weight: 600; margin-top: 4px">December</span><span style="font-size: 15px; letter-spacing: .2em; margin-top: 4px">2026</span></p>
-<p style="margin: 0; padding: 12px 4px; border-top: 1px solid #C9A24A; border-bottom: 1px solid #C9A24A; font-size: 15px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600">8:00 PM</p>
+<p style="margin: 0; padding: 12px 2px; border-top: 1px solid #C9A24A; border-bottom: 1px solid #C9A24A; font-size: clamp(12px, 3.4vw, 15px); letter-spacing: .14em; text-transform: uppercase; font-weight: 600">8:00 PM</p>
 </div>
 
 <div style="margin-top: 44px">
@@ -112,7 +113,7 @@ a{color:#0F3B2E}a:hover{color:#7A1E2C}
 </div>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px">
-<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Safaa+Banquet+Coast+Guard+Road+Sector+49+Korangi+Karachi" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 22px; border: 1px solid #0F3B2E; border-radius: 999px; font-size: 16px; font-weight: 600; letter-spacing: .08em; text-decoration: none; color: #0F3B2E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Get Directions</a>
+<a class="btn" href="https://maps.app.goo.gl/rxxAyND3wESiWUL28" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 22px; border: 1px solid #0F3B2E; border-radius: 999px; font-size: 16px; font-weight: 600; letter-spacing: .08em; text-decoration: none; color: #0F3B2E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Get Directions</a>
 <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding+of+Sawera+%26+Anas&amp;dates=20261216T150000Z/20261216T190000Z&amp;location=Safaa+Banquet,+Plot+11+Coast+Guard+Road,+Sector+49+Korangi,+Karachi&amp;details=Wedding+celebration+of+Sawera+%26+Anas" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 22px; border: 1px solid #0F3B2E; border-radius: 999px; font-size: 16px; font-weight: 600; letter-spacing: .08em; text-decoration: none; color: #0F3B2E"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>Save the Date</a>
 </div>
 </section>
